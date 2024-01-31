@@ -37,7 +37,7 @@ public class Task1 {
         System.out.println("Counter2: " + counter2.get());
     }
 
-    private static void incrementCounters(AtomicInteger counter1, AtomicInteger counter2) {
+    private synchronized static void incrementCounters(AtomicInteger counter1, AtomicInteger counter2) {
         // Increment both counters atomically
         counter1.incrementAndGet();
         counter2.incrementAndGet();
