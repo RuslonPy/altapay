@@ -2,12 +2,12 @@ package uz.altapayocto.user.dto;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.validation.constraints.Email;
-import lombok.AllArgsConstructor;
 import lombok.Getter;
-import lombok.NoArgsConstructor;
 import lombok.Setter;
 import uz.altapayocto.card.dto.CardDto;
 
+import java.sql.Timestamp;
+import java.util.Date;
 import java.util.List;
 
 @Getter
@@ -15,9 +15,9 @@ import java.util.List;
 public class UserDto {
     private Long id;
     @JsonFormat(pattern="yyyy-MM-dd")
-    private String dob;
-    @JsonFormat(pattern="yyyy-MM-dd")
-    private String dt;
+    private Date dob;
+    @JsonFormat(pattern = "yyyy-MM-dd")
+    private Timestamp dt;
     @Email
     private String email;
     private String fio;

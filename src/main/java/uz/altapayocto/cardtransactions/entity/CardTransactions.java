@@ -8,7 +8,7 @@ import lombok.Setter;
 import uz.altapayocto.card.entity.Card;
 import uz.altapayocto.cardtransactions.transactiontype.TypeTransactions;
 
-import java.sql.Timestamp;
+import java.util.Date;
 
 @Setter
 @Getter
@@ -24,7 +24,7 @@ public class CardTransactions {
 
     @Column(name = "type", length = 6)
     @Enumerated(value = EnumType.STRING)
-    private TypeTransactions typeTransactions;
+    private TypeTransactions type;
 
     @Column(name = "amount")
     private Long amount;
@@ -36,7 +36,7 @@ public class CardTransactions {
     private Long newBalance;
 
     @Column(name = "dt", columnDefinition = "TIMESTAMP DEFAULT current_timestamp")
-    private Timestamp dt;
+    private Date dt;
 
     @ManyToOne
     @JoinColumn(name = "card_id")
