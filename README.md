@@ -8,3 +8,13 @@ The class Task1 for the first task and the above ones for the second.
 ![image](https://github.com/RuslonPy/altapay/assets/55586392/3ed391e1-ba3c-4b6f-976c-512c79fe82d1)
 
 
+Hello Ruslan,
+
+Please document your code and provide documentation for the database. Specify the query or method JAVA you used to insert data into the PostgreSQL database.
+
+Thank you,
+
+
+
+
+
