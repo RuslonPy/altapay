@@ -3,7 +3,9 @@ package uz.altapayocto.card.dto;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 import uz.altapayocto.card.cardtype.CardType;
 import uz.altapayocto.cardtransactions.dto.TransactionsDto;
@@ -13,6 +15,8 @@ import java.util.List;
 
 @Getter
 @Setter
+@AllArgsConstructor
+@NoArgsConstructor
 @JsonPropertyOrder({
         "id",
         "balance",

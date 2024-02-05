@@ -2,7 +2,9 @@ package uz.altapayocto.user.dto;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.validation.constraints.Email;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 import uz.altapayocto.card.dto.CardDto;
 
@@ -12,6 +14,8 @@ import java.util.List;
 
 @Getter
 @Setter
+@AllArgsConstructor
+@NoArgsConstructor
 public class UserDto {
     private Long id;
     @JsonFormat(pattern="yyyy-MM-dd")
